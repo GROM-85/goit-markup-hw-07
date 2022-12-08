@@ -43,18 +43,9 @@
 
 }
 
-.antenna::before {
-    background-image: url(../images/svg/bcgSVG/antenna\ 1.svg)
-}
 
-.clock::before {
-    background-image: url(../images/svg/bcgSVG/clock\ 1.svg)
-}
-
-.laptop::before {
-    background-image: url(../images/svg/bcgSVG/diagram\ 1.svg)
-}
-
-.astronaut::before {
-    background-image: url(../images/svg/bcgSVG/astronaut\ 1.svg)
+@each $icon in antenna, clock, laptop, astronaut{
+    .#{$icon}::before {
+            background-image: url(../images/svg/bcgSVG/#{$icon}.svg)
+        }
 }
