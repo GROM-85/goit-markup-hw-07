@@ -1,0 +1,15 @@
+.header{
+    background-color: $white-bcg-color;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container,
+.site-nav,
+.site-nav__list,
+.header__container,
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

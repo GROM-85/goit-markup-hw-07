@@ -1,0 +1,60 @@
+.features{
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+         gap: 30px;
+    }
+
+    &__item{
+        @include flex-basis(30px,4);
+    }
+
+    &__item::before{
+        display: block;
+        content: '';
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    
+        background-color: #F5F4FA;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        border-radius: 4px;
+    }
+
+    &__title{
+        margin: 0 0 10px;
+        
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &__text{
+        margin: 0;
+        text-align: left;
+        @include font(400, 14px, $sec-text-color, 1.71, 0.02em);
+        
+    }
+
+}
+
+.antenna::before {
+    background-image: url(../images/svg/bcgSVG/antenna\ 1.svg)
+}
+
+.clock::before {
+    background-image: url(../images/svg/bcgSVG/clock\ 1.svg)
+}
+
+.laptop::before {
+    background-image: url(../images/svg/bcgSVG/diagram\ 1.svg)
+}
+
+.astronaut::before {
+    background-image: url(../images/svg/bcgSVG/astronaut\ 1.svg)
+}

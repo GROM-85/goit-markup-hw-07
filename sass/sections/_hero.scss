@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bcg-white-color);
+    text-align: center;
+    padding: 200px 0;
+
+    &.hero-overlay{
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        background-color: #2F303A;
+        background-image:
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/back_ground.jpg);        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    &__title{
+        margin: 0 0 30px;
+        text-transform: uppercase;
+        @include font(900, 44px, $white-text-color, 1.36, 0.06em);
+    }
+}

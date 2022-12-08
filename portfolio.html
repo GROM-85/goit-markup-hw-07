@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW-04</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,14 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="header__container container">
         <nav class="site-nav">
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+          <a href="./index.html" class="logo"><span class="logo__span">Web</span>Studio</a>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Studio</a>
@@ -53,14 +53,15 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="hidden-title">Main section</h1>
-          <ul class="filter list">
+          <h1 class="hidden-title">Portfolio section</h1>
+          <ul class="filter">
             <li>
               <button
-                class="btn secondary"
+                class="filter__btn secondary"
                 type="button"
                 onclick="filterChange('All')"
               >
@@ -69,7 +70,7 @@
             </li>
             <li>
               <button
-                class="btn secondary"
+                class="filter__btn secondary"
                 type="button"
                 onclick="filterChange('Web-site')"
               >
@@ -78,7 +79,7 @@
             </li>
             <li>
               <button
-                class="btn secondary"
+                class="filter__btn secondary"
                 type="button"
                 onclick="filterChange('Apps')"
               >
@@ -87,7 +88,7 @@
             </li>
             <li>
               <button
-                class="btn secondary"
+                class="filter__btn secondary"
                 type="button"
                 onclick="filterChange('Design')"
               >
@@ -96,7 +97,7 @@
             </li>
             <li>
               <button
-                class="btn secondary"
+                class="filter__btn secondary"
                 type="button"
                 onclick="filterChange('Marketing')"
               >
@@ -104,144 +105,144 @@
               </button>
             </li>
           </ul>
-          <ul class="card-set list" id="content">
+          <ul class="card__set" id="content">
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                  <img class="card-img" src="./images/website.jpg" alt="website" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                  <img class="card__img" src="./images/website.jpg" alt="website" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
-                <div class="card-info">
-                  <h2 class="cnt-title">Technoduck</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Technoduck</h2>
                   <p>Web-site</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/design.jpg" alt="design" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/design.jpg" alt="design" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
 
-                <div class="card-info">
-                  <h2 class="cnt-title">Poster New Orlean vs Golden Star</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Poster New Orlean vs Golden Star</h2>
                   <p>Design</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/seafood.jpg" alt="seafood resturant" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/seafood.jpg" alt="seafood resturant" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
 
-                <div class="card-info">
-                  <h2 class="cnt-title">Seafood Resturant</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Seafood Resturant</h2>
                   <p>Apps</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/prime.jpg" alt="prime" width="370" height="294" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/prime.jpg" alt="prime" width="370" height="294" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
-                <div class="card-info">
-                  <h2 class="cnt-title">Project Prime</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Project Prime</h2>
                   <p>Marketing</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/boxes.jpg" alt="boxes" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/boxes.jpg" alt="boxes" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
 
-                <div class="card-info">
-                  <h2 class="cnt-title">Project Boxes</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Project Boxes</h2>
                   <p>Apps</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
+              <a class="card__link" href="#">
 
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/inspiration.jpg" alt="inspiration" width="370" />
-                <div class="card-overlay">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/inspiration.jpg" alt="inspiration" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
 
-                <div class="card-info">
-                  <h2 class="cnt-title">Inspiration has no Borders</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
                   <p>Web-site</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/limitedEddition.jpg" alt="lim-edition" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/limitedEddition.jpg" alt="lim-edition" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
-                <div class="card-info">
-                  <h2 class="cnt-title">Limited Edition</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Limited Edition</h2>
                   <p>Design</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/lab.jpg" alt="lab" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/lab.jpg" alt="lab" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
-                <div class="card-info">
-                  <h2 class="cnt-title">Project LAB</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Project LAB</h2>
                   <p>Marketing</p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="#">
-                <div class="card-box-relative">
-                <img class="card-img" src="./images/business.jpg" alt="business" width="370" />
-                <div class="card-overlay">
+              <a class="card__link" href="#">
+                <div class="card__box-relative">
+                <img class="card__img" src="./images/business.jpg" alt="business" width="370" />
+                <div class="card__overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers,and attacks on competitors secure servers.</p>
                 </div>
                 </div>
 
-                <div class="card-info">
-                  <h2 class="cnt-title">Growing Business</h2>
+                <div class="card__info">
+                  <h2 class="card__title">Growing Business</h2>
                   <p>Apps</p>
                 </div>
               </a>
@@ -250,77 +251,77 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="address__container">
-          <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
-          <address class="address">
-            <ul class="address__contact list">
-              <li class="address__item">
-                <a class="address__link link" href="https://goo.gl/maps/gs37guJ5S6naws7R7">695 Park Ave, New York, NY 10065,
-                  United States</a>
-              </li>
-              <li class="address__item">
-                <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address__item">
-                <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="address__container">
+      <a href="./index.html" class="footer__logo"><span class="footer__logo__span">Web</span>Studio</a>
+      <address class="address">
+        <ul class="address__contact">
+          <li class="address__item">
+            <a class="address__link" href="https://goo.gl/maps/gs37guJ5S6naws7R7">695 Park Ave, New York, NY 10065,
+              United States</a>
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="join-us">
+      <h2 class="join-us__title">Join us on</h2>
+      <ul class="social-net__list list">
+        <li class="social-net__item">
+          <a class="social-net__link link" target="_blank" href="https://www.instagram.com/" aria-label="instagram">
+            <svg class="social-net__icon">
+              <use href="./images/svg/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-net__item">
+          <a class="social-net__link link" target="_blank" aria-label="twitter" href="">
+            <svg class="social-net__icon">
+              <use href="./images/svg/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-net__item">
+          <a class="social-net__link link" target="_balnk" aria-label="facebook" href="">
+            <svg class="social-net__icon">
+              <use href="./images/svg/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-net__item">
+          <a class="social-net__link link" target="_blank" aria-label="linkedin" href="">
+            <svg class="social-net__icon">
+              <use href="./images/svg/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-subscribe">
+      <label>
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe to the newsletter</p>
+          <div class="subscribe__input-container">
+            <input class="subscribe__input" id="email" type="email" placeholder="E-mail" required />
+            <button class="subscribe__btn btn primary">
+              Subscribe
+              <svg class="subscribe__icon">
+                <use href="./images/svg/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="join-us">
-          <h2 class="join-us__title">Join us on</h2>
-          <ul class="social-net__list list">
-            <li class="social-net__item">
-              <a class="social-net__link link" target="_blank" href="https://www.instagram.com/" aria-label="instagram">
-                <svg class="social-net__icon">
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-net__item">
-              <a class="social-net__link link" target="_blank" aria-label="twitter" href="">
-                <svg class="social-net__icon">
-                  <use href="./images/svg/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-net__item">
-              <a class="social-net__link link" target="_balnk" aria-label="facebook" href="">
-                <svg class="social-net__icon">
-                  <use href="./images/svg/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-net__item">
-              <a class="social-net__link link" target="_blank" aria-label="linkedin" href="">
-                <svg class="social-net__icon">
-                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    
-        <form class="form-subscribe" action="">
-          <label for="email">
-            <div class="subscribe">
-              <p class="subscribe-title">Subscribe to the newsletter</p>
-              <div class="input-container">
-                <input class="subscribe-input" type="email" placeholder="E-mail" required />
-                <button class="btn primary subscribe-btn">
-                  Subscribe
-                  <svg class="subscribe-icon">
-                    <use href="./images/svg/icons.svg#send"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </label>
-        </form>
-      </div>
-    </footer>
+      </label>
+    </form>
+  </div>
+</footer>
     <script>
 
       function filterChange(val) {

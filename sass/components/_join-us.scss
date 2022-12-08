@@ -1,0 +1,18 @@
+.join-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+    padding-top: 12px;
+
+    &__title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include font(700, 14px, $white-text-color, 1.14, 0.03em);
+    }
+    & .social-net__link{
+        background:$grey-bcg-color;
+    }
+
+}
+

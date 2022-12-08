@@ -1,0 +1,32 @@
+.contact {
+    margin-left: auto;
+
+    &__item{
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: center;
+    }
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        @include transition(color);
+        @include font(500, 14px, $sec-text-color, 1.14, 0.02em);
+    }
+
+    &__link:hover,&__link:focus{
+        color: $accent-color;
+    }
+
+    &__icon{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+}
