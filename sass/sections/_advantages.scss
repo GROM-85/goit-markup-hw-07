@@ -8,22 +8,23 @@
     }
 
     &__item{
+        display:flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
         @include flex-basis(30px,4);
     }
 
-    &__item::before{
-        display: block;
-        content: '';
-        width: 270px;
-        height: 120px;
-        margin-bottom: 30px;
-    
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items:center;        
+        padding:25px 100px;  
         background-color: #F5F4FA;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 70px 70px;
         border-radius: 4px;
+        margin-bottom:30px;
     }
+    
 
     &__title{
         margin: 0 0 10px;
@@ -43,9 +44,3 @@
 
 }
 
-
-@each $icon in antenna, clock, laptop, astronaut{
-    .#{$icon}::before {
-            background-image: url(../images/svg/bcgSVG/#{$icon}.svg)
-        }
-}

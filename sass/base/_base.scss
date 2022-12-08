@@ -69,29 +69,10 @@ a {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto
 }
 
-/* BUTTONS */
-
-.btn {
-    background-color: var(--bcg-white-color);
-    color: var(--primary-text-color);
-    border: 1px solid transparent;
-    cursor: pointer;
-    text-align: center;
-}
-
-.primary {
-    background-color: $accent-color;
-    color: #ffffff;
-}
-
-.secondary {
-    background-color: $light-grey-bcg-color;
-    color: $primary-text-color;
-}
 
 .container {
     max-width: 1200px;

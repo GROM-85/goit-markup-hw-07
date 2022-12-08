@@ -61,7 +61,7 @@
           <ul class="filter">
             <li>
               <button
-                class="filter__btn secondary"
+                class="filter__btn"
                 type="button"
                 onclick="filterChange('All')"
               >
@@ -70,7 +70,7 @@
             </li>
             <li>
               <button
-                class="filter__btn secondary"
+                class="filter__btn"
                 type="button"
                 onclick="filterChange('Web-site')"
               >
@@ -79,7 +79,7 @@
             </li>
             <li>
               <button
-                class="filter__btn secondary"
+                class="filter__btn"
                 type="button"
                 onclick="filterChange('Apps')"
               >
@@ -88,7 +88,7 @@
             </li>
             <li>
               <button
-                class="filter__btn secondary"
+                class="filter__btn"
                 type="button"
                 onclick="filterChange('Design')"
               >
@@ -97,7 +97,7 @@
             </li>
             <li>
               <button
-                class="filter__btn secondary"
+                class="filter__btn"
                 type="button"
                 onclick="filterChange('Marketing')"
               >
@@ -326,19 +326,16 @@
 
       function filterChange(val) {
         let cards = document.querySelectorAll(".card");
-        console.log(cards);
+        // console.log(cards);
 
         cards.forEach((card) => (card.style.display = ""));
 
         for (i = 0; i < cards.length; i++) {
-          console.log(cards[i].getElementsByTagName("p"));
-          if (
-            
-            cards[i].getElementsByTagName("p")[1].innerText != val &&
-            val != "All"
-          ) {
+          // console.log(cards[i].getElementsByTagName("p"));
+          if(cards[i].getElementsByTagName("p")[1].innerText != val &&val != "All"){
             cards[i].style.display = "none";
-          } else {
+          }
+          else{
             cards[i].style.display = "flex";
           }
         }

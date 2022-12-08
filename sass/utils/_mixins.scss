@@ -12,10 +12,10 @@
 }
 
 @mixin flex-basis($gap, $num_items){
-    flex-basis:calc((100% - $gap*($num_items - 1))/$num_items);
+    flex-basis:calc((100% - $gap * ($num_items - 1))/$num_items);
 }
 
-@mixin icon_size($width,$heigth){
+@mixin icon_size($width, $heigth){
     width:$width;
     height:$height;
 }

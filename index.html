@@ -70,38 +70,59 @@
           EFFECTIVE SOLUTIONS FOR<br />
           YOUR BUSINESS
         </h1>
-        <button class="hero__btn btn primary" type="button" data-modal-open>
+        <button class="hero__btn" type="button" data-modal-open>
           Request our service
         </button>
       </section>
 
-      <section class="features section">
+      <section class="section">
         <div class="container">
           <h2 class="hidden-title">Our Perks</h2>
 
           <ul class="features__list">
-            <li class="features__item antenna">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
+                  <use href="./images/svg/icons.svg#antenna"></use>
+                </svg>
+              </div>
+
               <h3 class="features__title">ATTENTION TO DETAILS</h3>
               <p class="features__text">
                 We go into all the details and processes of your business to
                 develop a customized solution.
               </p>
             </li>
-            <li class="features__item clock">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
+                  <use href="./images/svg/icons.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="features__title">PUNCTUALITY</h3>
               <p class="features__text">
                 With us, you can feel safe and secure. An important principle of
                 the company: respect your time and respect the agreed deadlines.
               </p>
             </li>
-            <li class="features__item laptop">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
+                  <use href="./images/svg/icons.svg#laptop"></use>
+                </svg>
+              </div>
               <h3 class="features__title">PLANNING</h3>
               <p class="features__text">
                 You will be able to observe and participate in every phase of
                 solution development and implementation.
               </p>
             </li>
-            <li class="features__item astronaut">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
+                  <use href="./images/svg/icons.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features__title">MODERN TECHNOLOGIES</h3>
               <p class="features__text">
                 We use innovative tools to solve assigned tasks. It's time to
@@ -143,7 +164,7 @@
         </div>
       </section>
 
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="section__title">Our Team</h2>
           <ul class="team__list">
@@ -400,7 +421,7 @@
         </div>
       </section>
 
-      <section class="client section">
+      <section class="section">
         <div class="container">
           <h2 class="hidden-title">Our Clients</h2>
           <ul class="client__list">
@@ -543,7 +564,7 @@
                   placeholder="E-mail"
                   required
                 />
-                <button class="subscribe__btn btn primary">
+                <button class="subscribe__btn">
                   Subscribe
                   <svg class="subscribe__icon">
                     <use href="./images/svg/icons.svg#send"></use>
@@ -576,7 +597,7 @@
             autocomplete="on"
             validate
           >
-            <label for="fname-lname" class="label">
+            <label  class="label">
               Your Name<br />
 
               <input
@@ -590,7 +611,7 @@
                 <use href="./images/svg/icons.svg#person"></use>
               </svg>
             </label>
-            <label for="phone" class="label">
+            <label class="label">
               Phone <br />
 
               <input class="input" type="text" name="phone" required />
@@ -598,7 +619,7 @@
                 <use href="./images/svg/icons.svg#phone"></use>
               </svg>
             </label>
-            <label for="email" class="label">
+            <label class="label">
               Email <br />
 
               <input class="input" type="email" name="email" required />
@@ -633,7 +654,7 @@
                 Terms and Conditions</a
               >
             </div>
-            <button class="btn primary submit-btn" type="submit">Send</button>
+            <button class="submit-btn" type="submit">Send</button>
           </form>
         </div>
       </div>
