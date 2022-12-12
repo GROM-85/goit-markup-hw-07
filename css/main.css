@@ -233,18 +233,15 @@ img {
   letter-spacing: 0.02em;
 }
 
-.client__list {
+.client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.client__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-}
-.client__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (max-width: 768px) {
   .client__item {
@@ -339,6 +336,7 @@ img {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
+    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/hero-mob.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero-mob.jpg);
   }
@@ -351,6 +349,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/hero-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero-tablet.jpg);
   }
@@ -363,6 +362,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/hero.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero.jpg);
   }

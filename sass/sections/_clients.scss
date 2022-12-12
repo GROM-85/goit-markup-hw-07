@@ -1,13 +1,13 @@
 .client{
-
+    display: flex;
     &__list{
-        display: flex;
+        
         flex-wrap: wrap;
         gap: 30px;
     }
 
     &__item{
-        display:flex; 
+        
         
         @media screen and (max-width: 768px) {
                 @include flex-basis(30px, 2);
