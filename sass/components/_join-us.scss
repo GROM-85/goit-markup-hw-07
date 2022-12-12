@@ -1,8 +1,14 @@
 .join-us{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 70px;    
+    justify-content: center;
+    align-items: center;    
+    
+    @media screen and (min-width: 1200px){
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 70px;
+    }
 
     &__title{
         margin-bottom: 20px;

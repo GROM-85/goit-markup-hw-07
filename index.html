@@ -21,58 +21,107 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo"><span class="logo__span">Web</span>Studio</a>
-          <ul class="site-nav__list ">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current">Studio</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Portfolio</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a
-              href="mailto:info@example.com"
-              class="contact__link"
-              aria-label="email"
-            >
-              <svg class="contact__icon">
-                <use href="./images/svg/icons.svg#icon-envelope"></use>
-              </svg>
-              info@example.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a
-              href="tel:+380961111111"
-              class="contact__link"
-              aria-label="phone"
-            >
-              <svg class="contact__icon">
-                <use href="./images/svg/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <a href="./index.html" class="logo"
+          ><span class="logo__span">Web</span>Studio</a
+        >
+        <div class="menu-container" id="menu-container" data-container>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__link--current"
+                  >Studio</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Portfolio</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__contact">
+            <ul class="contact">
+              <li class="contact__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="contact__link"
+                  aria-label="email"
+                >
+                  <svg class="contact__icon">
+                    <use href="./images/svg/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@example.com</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="contact__link"
+                  aria-label="phone"
+                >
+                  <svg class="contact__icon">
+                    <use href="./images/svg/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social">
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="./">Instagram</a>
+                <span class="menu-social__line"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="./">Twitter</a>
+                <span class="menu-social__line"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="./">Facebook</a>
+                <span class="menu-social__line"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="./">Linkedin</a>
+                <span class="menu-social__line menu-social__line--none"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="menu-btn"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg
+            class="menu-btn__icon"
+            width="40"
+            height="40"
+            aria-label="mobile menu button"
+          >
+            <use
+              class="menu-btn__open js-open-menu"
+              href="./images/svg/icons.svg#menu"
+            ></use>
+            <use
+              class="menu-btn__close js-close-menu"
+              href="./images/svg/icons.svg#close40"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="hero hero-overlay">
-        <h1 class="hero__title">
-          EFFECTIVE SOLUTIONS FOR<br />
-          YOUR BUSINESS
-        </h1>
-        <button class="hero__btn" type="button" data-modal-open>
-          Request our service
-        </button>
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button class="hero__btn" type="button" data-modal-open>
+            Request our service
+          </button>
+        </div>
       </section>
 
       <section class="section">
@@ -82,7 +131,7 @@
           <ul class="features__list">
             <li class="features__item">
               <div class="features__icon">
-                <svg width="70" height="70">
+                <svg width="70" height="70" aria-label="antenna icon">
                   <use href="./images/svg/icons.svg#antenna"></use>
                 </svg>
               </div>
@@ -95,7 +144,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg width="70" height="70">
+                <svg width="70" height="70" aria-label="clock icon">
                   <use href="./images/svg/icons.svg#clock"></use>
                 </svg>
               </div>
@@ -107,7 +156,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg width="70" height="70">
+                <svg width="70" height="70" aria-label="laptop icon">
                   <use href="./images/svg/icons.svg#laptop"></use>
                 </svg>
               </div>
@@ -119,7 +168,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg width="70" height="70">
+                <svg width="70" height="70" aria-label="astronaut icon">
                   <use href="./images/svg/icons.svg#astronaut"></use>
                 </svg>
               </div>
@@ -138,24 +187,34 @@
           <h2 class="section__title">What we do</h2>
           <ul class="activity__list">
             <li class="activity__item">
-              <img src="images/img1.jpg" alt="desktop" width="370" height="294" />
+              <img
+                scrset="./images/desktop.jpg 1x, ./images/desktop2x 2x"
+                media="screen and (min-width:1199px)"
+                src="images/desktop.jpg"
+                alt="desktop"
+              />
               <div class="activity__overlay">
                 <p>DESKTOP APPS</p>
               </div>
             </li>
             <li class="activity__item">
               <img
-                src="images/img2.jpg"
+                scrset="./images/tablet.jpg 1x, ./images/tablet2x.jpg 2x"
+                media="screen and (min-width:1199px)"
+                src="images/tablet.jpg"
                 alt="mobile_app"
-                width="370"
-                height="294"
               />
               <div class="activity__overlay">
                 <p>MOBILE APPS</p>
               </div>
             </li>
             <li class="activity__item">
-              <img src="images/img3.jpg" alt="design_solution" width="370" height="294" />
+              <img
+                scrset="./images/mobile.jpg 1x, ./images/mobile2x 2x"
+                media="screen and (min-width:1199px)"
+                src="images/mobile.jpg"
+                alt="design_solution"
+              />
               <div class="activity__overlay">
                 <p>DESIGN SOLUTIONS</p>
               </div>
@@ -169,12 +228,46 @@
           <h2 class="section__title">Our Team</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="images/ProdDes.jpg"
-                alt="ProductDes"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/prod_des-mob.jpg    1x,
+                    ./images/index/prod_des@2x-mob.jpg 2x
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/prod_des-tablet.jpg    1x,
+                    ./images/index/prod_des@2x-tablet.jpg 2x
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/prod_des-desktop.jpg    1x,
+                    ./images/index/prod_des@2x-desktop.jpg 2x
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/index/prod_des-desktop.jpg 270w,
+                    ./images/index/prod_des-tablet.jpg  354w,
+                    ./images/index/prod_des-mob.jpg     450w
+                  "
+                  sizes="(min-width: 1200px) 25vw,
+                                        (min-width:768px) 50vw, 100vw"
+                  src="./images/index/prod_des-desktop.jpg"
+                  alt="UI_des"
+                />
+              </picture>
               <div class="team__member-info">
                 <h3 class="team__member-title">Christopher Walker</h3>
                 <p class="team__member-text">Product Designer</p>
@@ -231,12 +324,45 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/FrontDev.jpg"
-                alt="FrontDev"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/front_end-mob.jpg    1x,
+                    ./images/index/front_end@2x-mob.jpg 2x
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/front_end-tablet.jpg    1x,
+                    ./images/index/front_end@2x-tablet.jpg 2x
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/front_end-desktop.jpg    1x,
+                    ./images/index/front_end@2x-desktop.jpg 2x
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/index/front_end-desktop.jpg 270w,
+                    ./images/index/front_end-tablet.jpg  354w,
+                    ./images/index/front_end-mob.jpg     450w
+                  "
+                  sizes="(min-width: 1200px) 25vw,(min-width:768px) 50vw, 100vw"
+                  src="./images/index/front_end-desktop.jpg"
+                  alt="UI_des"
+                />
+              </picture>
               <div class="team__member-info">
                 <h3 class="team__member-title">Kylie Evans</h3>
                 <p class="team__member-text">Frontend Developer</p>
@@ -294,12 +420,46 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="images/Market.jpg"
-                alt="Market"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/marketing-mob.jpg    1x,
+                    ./images/index/marketing@2x-mob.jpg 2x
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/marketing-tablet.jpg    1x,
+                    ./images/index/marketing@2x-tablet.jpg 2x
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/marketing-desktop.jpg    1x,
+                    ./images/index/marketing@2x-desktop.jpg 2x
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/index/marketing-desktop.jpg 270w,
+                    ./images/index/marketing-tablet.jpg  354w,
+                    ./images/index/marketing-mob.jpg     450w
+                  "
+                  sizes="(min-width: 1200px) 25vw,
+                                      (min-width: 768px) 50vw, 100vw"
+                  src="./images/index/marketing-desktop.jpg"
+                  alt="UI_des"
+                />
+              </picture>
               <div class="team__member-info">
                 <h3 class="team__member-title">Ryan Harris</h3>
                 <p class="team__member-text">Marketing</p>
@@ -356,12 +516,46 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/UIDes.jpg"
-                alt="UI_des"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/ui_des-mob.jpg    1x,
+                    ./images/index/ui_des@2x-mob.jpg 2x
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/ui_des-tablet.jpg    1x,
+                    ./images/index/ui_des@2x-tablet.jpg 2x
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/index/ui_des-desktop.jpg    1x,
+                    ./images/index/ui_des@2x-desktop.jpg 2x
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/index/ui_des-desktop.jpg 270w,
+                    ./images/index/ui_des-tablet.jpg  354w,
+                    ./images/index/ui_des-mob.jpg     450w
+                  "
+                  sizes="(min-width: 1200px) 25vw,
+                                        (min-width:768px) 50vw, 100vw"
+                  src="./images/index/ui_des-desktop.jpg"
+                  alt="UI_des"
+                />
+              </picture>
               <div class="team__member-info">
                 <h3 class="team__member-title">Tyler Moore</h3>
                 <p class="team__member-text">UI Designer</p>
@@ -475,7 +669,9 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="address__container">
-          <a href="./index.html" class="footer__logo"><span class="footer__logo__span">Web</span>Studio</a>
+          <a href="./index.html" class="footer__logo"
+            ><span class="footer__logo__span">Web</span>Studio</a
+          >
           <address class="address">
             <ul class="address__contact">
               <li class="address__item">
@@ -597,7 +793,7 @@
             autocomplete="on"
             validate
           >
-            <label  class="label">
+            <label class="label">
               Your Name<br />
 
               <input
@@ -650,9 +846,7 @@
               <p class="agreement-text">
                 I agree with all newsletter and accept the
               </p>
-              <a class="agreement-text__link" href="#">
-                Terms and Conditions</a
-              >
+              <a class="agreement-text__link" href="#"> Terms and Conditions</a>
             </div>
             <button class="submit-btn" type="submit">Send</button>
           </form>
@@ -661,5 +855,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

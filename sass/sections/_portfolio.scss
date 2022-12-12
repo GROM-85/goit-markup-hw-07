@@ -1,12 +1,15 @@
-.filter{
+.filter__list{
 
     display:flex;
     justify-content: center;
     align-items:center;
+    flex-wrap:wrap;
     gap:8px;
 
     margin-bottom: 50px;
 }
+
+
 
 .card__set{
     display: flex;
@@ -16,7 +19,17 @@
 }
 
 .card{
-    width: 370px;
+   @media screen and (min-width:480px){
+    @include flex-basis(30px,1);
+   }
+
+    @media screen and (min-width:768px) {
+        @include flex-basis(30px, 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        @include flex-basis(30px, 3);
+    }
 
     &__link{
         @include transition(box-shadow);

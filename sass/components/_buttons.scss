@@ -1,5 +1,7 @@
 .hero__btn{
-    padding: 10px 32px;
+    
+    padding: auto;
+    height: 50px;
     background-color: $accent-color;
     color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -10,12 +12,63 @@
     @include font(700, 16px, $white-text-color, 1.9, 0.06em);
     @include transition(background-color);
 
+    @media screen and (max-width:1199px) {
+       
+        width:200px;     
+        
+    }
+
+    @media screen and (min-width:1200px) {
+       
+        width: 216px;;
+        
+        
+       
+    }
+
     &:hover,&:focus{
         background-color: #117fd8;
+        
     }
 }
 
+.menu-btn{    
+    z-index: 2;
+
+    &__close{
+        display:none;
+    }
+
+    &.is-open .menu-btn__close{        
+        display:block;
+        
+    }
+
+    &.is-open .menu-btn__open{
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+
+    &__icon{
+        fill:currentColor;
+        @include transition(fill);        
+           
+    } 
+    
+    
+    @media screen and (min-width:768px){
+        display:none;
+    }
+}
+
+
 .filter__btn{
+    display: flex;
+    flex-wrap: wrap;
     padding: 6px 22px;
     border-radius: 4px; 
     background-color:$light-grey-bcg-color;
